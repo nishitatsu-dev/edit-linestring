@@ -8,7 +8,7 @@ This module is intended to the user of the map "Vector" produced by Geospatial I
 ## Installation
 
 ```shell
-npm install -g edit-linestring
+npm install -g @nishitatsu/edit-linestring
 ```
 
 ## Usage
