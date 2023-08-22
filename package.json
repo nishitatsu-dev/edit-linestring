@@ -1,6 +1,6 @@
 {
   "name": "@nishitatsu/edit-linestring",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "LineString feature at geojson file is edited on the CLI.",
   "bin": {
     "edit-linestring": "./bin/edit-linestring.js"
