@@ -11,22 +11,22 @@ test("calcdistance(): 100m at Japan National Stadium", () => {
   assert.strictEqual(Math.round(distance), 100);
 });
 
-test("differntDirection(): smaller than 15 degrees", () => {
+test("sameDirection(): smaller than 15 degrees", () => {
   const corner = [139.72351450002412, 35.55905963544666];
   const point1 = [139.72364123439718, 35.55899417478201];
   const point2 = [139.72360368347185, 35.558986537700974];
   const cornerToPoint1 = new PointsRelation(corner, point1);
   const cornerToPoint2 = new PointsRelation(corner, point2);
-  const differentDirection = cornerToPoint1.differentDirection(cornerToPoint2);
-  assert.strictEqual(differentDirection, false);
+  const sameDirection = cornerToPoint1.sameDirection(cornerToPoint2);
+  assert.strictEqual(sameDirection, true);
 });
 
-test("differntDirection(): larger than 15 degrees", () => {
+test("sameDirection(): larger than 15 degrees", () => {
   const corner = [139.72351450002412, 35.55905963544666];
   const point1 = [139.72364123439718, 35.55899417478201];
   const point2 = [139.72359764849924, 35.55898544669064];
   const cornerToPoint1 = new PointsRelation(corner, point1);
   const cornerToPoint2 = new PointsRelation(corner, point2);
-  const differentDirection = cornerToPoint1.differentDirection(cornerToPoint2);
-  assert.strictEqual(differentDirection, true);
+  const sameDirection = cornerToPoint1.sameDirection(cornerToPoint2);
+  assert.strictEqual(sameDirection, false);
 });
