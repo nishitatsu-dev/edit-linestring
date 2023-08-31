@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import test from "node:test";
 
-import Coordinates from "./coordinates.js";
+import Coordinates from "../lib/coordinates.js";
 
 test("decimatePoints(): Freehand line", () => {
   const line = new Coordinates(coordinates1);

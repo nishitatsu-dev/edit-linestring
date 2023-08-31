@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import test from "node:test";
 
-import PointsRelation from "./points_relation.js";
+import PointsRelation from "../lib/points_relation.js";
 
 test("calcdistance(): 100m at Japan National Stadium", () => {
   const point1 = [139.7143105610211, 35.67846381519006];
