@@ -4,6 +4,7 @@
 
 LineString feature at geojson file is edited on the CLI.
 This module is intended to the user of the map "Vector" produced by Geospatial Information Authority of Japan.
+Node version 17.0.0 or later is required.
 
 ## Installation
 
